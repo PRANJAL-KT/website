@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="frontend.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>  
+     
+  </style>
+</head>
+<body>
+    
+    <div class="container">
+        <div class="navbar">
+            <div class="logo">
+                <img src="logo.png" alt="logo"  width="350" height="70px" >
+            </div>
+            <nav>
+                <ul>
+                    
+                  <div class="search-container">
+                        <form class="searchbar">
+                            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                        </form>
+                  </div>
+                      
+                  
+                    
+                    <li><a href="frontend.html">Home</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="login.html">Account</a></li> 
+                    <li><a href=""><i class="fa-solid fa-cart-shopping"></i>Cart</a></li>
+                    
+                </ul>
+               
+            </nav>
+        </div>
+        <div class="slider">
+            <div class="slides">
+                <!-- Slide images -->
+                <img src="m11.jpg" alt="Image 1" class="slide">
+                <img src="m22.jpg" alt="Image 2" class="slide">
+                <img src="m33.jpg" alt="Image 3" class="slide">
+                <!-- Add more images as needed -->
+              </div>
+             <!-- Navigation buttons -->
+            <!-- <button class="prev" onclick="changeSlide(-1)">&#10094;</button> -->
+            <!-- <button class="next" onclick="changeSlide(1)">&#10095;</button> -->
+        </div> 
+    </div>
+    <!-- <div class="cate">
+        <h1>Our Categories</h1>
+        <div class="cat1">
+            <div class="cat2">
+             
+                 <h2>Smart phones</h2>
+                 <img src="actual pg1.png" alt="">
+            </div>
+    
+             <div class="cat2">
+                 <h2>Laptop</h2>
+                 <img src="actual pg 2.png" alt="">
+             </div>
+             <div class="cat2">
+                 <h2>Home appliance</h2>
+                 <img src="actual pg 3.png" alt="">
+             </div>
+             
+        </div>
+     
+    </div> -->
+    <!-- <div class="table">
+        <table>
+            <tr>
+                <td><img src="actual pg1.png" alt=""></td>
+                <td><img src="actual pg 2.png" alt=""></td>
+                <td><img src="actual pg 3.png" alt=""></td>
+            </tr>
+        </table>
+        
+    </div>
+     -->
+    <div id="Categories" style="margin-left: 70px;">
+        <h1>Our Categories</h1>
+    </div>
+    <div class="cate" ;">
+        <div class="box" id="box1">
+            
+            <a href="product.html"><img src="actual pg1.png" alt=""><h2>Smart phones</h2></a>
+            
+            
+        </div>
+        <div class="box" id="box2">
+            
+            <a href="product.html"><img src="actual pg 2.png" alt=""><h2>Laptops</h2></a>
+            
+        </div>
+        <div class="box" id="box3">
+            
+            <a href="product.html"><img src="actual pg 3.png" alt=""><h2>Home appliances</h2></a>
+            <!-- <h2>Home appliances</h2> -->
+            
+        </div>
+    </div>
+    <footer>
+        <div class="footer-container">
+            <div class="app-links">
+                <h3>DONWLOAD OUR APP</h3>
+                <p>Download app for android and ios mobile phone.</p>
+                <div class="store-button">
+                    <img src="gplay.png" alt="google play" width="140" height="50">
+                    <img src="appstore.jpeg" alt="app store" width="140" height="50">
+    
+                </div>
+            </div>
+            <div class="about">
+                <img src="logo.PNG" alt="logo" class="logo">
+                <p>our purpose is to sustainably make the pleasure and benifits of online store to many</p>
+            </div>
+            <div class="usefull-links">
+                <h3>Useful links</h3>
+                <ul>
+                    <li><a href="#">coupons</a></li>
+                    <li><a href="#">blog post</a></li>
+                    <li><a href="#">return policy</a></li>
+                    <li><a href="#">join affiliate</a></li>
+                </ul>
+            </div>
+            <div class="social-links">
+                <h3>Follow us on</h3>
+                <ul>
+                    <li><a href="https://www.facebook.com">Facebook</a></li>
+                    <li><a href="https://twitter.com">Twitter</a></li>
+                    <li><a href="https://instagram.com">Instagram</a></li>
+                    <li><a href="https://youtube.com">Youtube</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>Copyright 2020 - Easy Tutorials</p>
+        </div>
+        </footer>
+
+
+
+
+
+
+     <script>
+        let slideIndex = 0;
+        
+        function showSlides() {
+            const slides = document.getElementsByClassName("slide");
+            for (let i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) { slideIndex = 1 }
+            slides[slideIndex - 1].style.display = "block";
+            setTimeout(showSlides, 3000); // Change image every 3 seconds
+        }
+        
+        function changeSlide(n) {
+            slideIndex += n;
+            const slides = document.getElementsByClassName("slide");
+            if (slideIndex < 1) { slideIndex = slides.length }
+            if (slideIndex > slides.length) { slideIndex = 1 }
+            for (let i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slides[slideIndex - 1].style.display = "block";
+        }
+        
+        window.onload = showSlides;
+        </script>  
+</body>
+</html>

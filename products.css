@@ -1,0 +1,75 @@
+main {
+    padding: 2em 5%;
+}
+
+h2 {
+    font-size: 40px;
+    margin-bottom: 1em;
+    justify-content: center;
+    margin-left: 36%;
+    margin-top: 1%;
+    font-family:cursive;
+    text-shadow: black;
+    color:rgb(14, 139, 211);
+}
+
+.filter {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 1em;
+}
+
+.filter label {
+    margin-right: 10px;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    
+}
+
+.product-card {
+    background-color:#aae4f4;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+}
+
+.product-card img {
+    width: 100%;
+    max-width: 170px;
+    height:70%;
+    border-radius: 5px;
+   
+
+}
+
+.product-card h4 {
+    font-size: 18px;
+    margin: 15px 0 5px;
+    color: purple;
+}
+
+.rating {
+    color: orange;
+    margin: 10px 0;
+}
+
+.product-card p {
+    font-size: 16px;
+    font-weight: bold;
+}
+body{
+    background-color: ;
+}
+.product-grid1 {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    padding: auto;
+    margin-left: 85px;
+    margin-right: 85px;
+}
